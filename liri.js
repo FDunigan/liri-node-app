@@ -109,5 +109,5 @@ function doWhatItSays() {
         }
 
         console.log(data);
-    })
-}
+    });
+};
