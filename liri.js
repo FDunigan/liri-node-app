@@ -35,7 +35,7 @@ function myTweets() {
     client.get("statuses/user_timeline", params, function(error, tweets, response) {
         if(!error) {
             for (var i = 0; i < tweets.length; i++) {
-                console.log(tweets[i].text);
+                console.log("Tweet: " + tweets[i].text);
                 console.log("\n--------")
             };
         } else {
@@ -58,7 +58,7 @@ function spotifyThisSong(trackName) {
         function(err, data) {
             if (!err) {
                 var trackInfo = data.tracks.items;
-                for (var i = 0; i < 5; i++) {
+                for (var i = 0; i < 3; i++) {
                     if (trackInfo[i] != undefined) {
                         var spotifyResults = 
                             "Artist: " + trackInfo[i].artists[0].name + "\n" +
