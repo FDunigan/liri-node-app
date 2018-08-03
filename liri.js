@@ -108,6 +108,6 @@ function doWhatItSays() {
             return console.log("error: " + err);
         }
 
-        console.log(data);  
+        console.log(data); 
     });
 };
